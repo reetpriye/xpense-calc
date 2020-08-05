@@ -1,0 +1,15 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: #0a0b0f;
+  color: #f0f0f0;
+}
+
+.header {
+  font-family: "Handlee", cursive;
+}
+
+.footer {
+  font-family: "Jost", sans-serif;
+  text-align: right;
+  background: rgb(52, 133, 255);
+}
