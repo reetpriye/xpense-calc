@@ -6,9 +6,11 @@ import "./App.css";
 
 export default function App() {
   return (
-    <>
-      <Header />
-      <Footer />
-    </>
+    <div>
+      <div className="container">
+        <Header />
+        <Footer />
+      </div>
+    </div>
   );
 }
