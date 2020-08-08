@@ -1,7 +1,7 @@
 import React from "react";
 
-const InputBox = () => {
-  return <input className="input_box" placeholder="Enter the amount in ₹" />;
+const InputBox = ({ text, classname }) => {
+  return <input className={classname} placeholder={text} />;
 };
 
 export default InputBox;

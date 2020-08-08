@@ -24,20 +24,25 @@ body {
 .top-container {
   display: grid;
   grid-template-areas:
-    ". . balance_header"
-    "input_box input_box balance"
-    "input_box input_box balance"
-    "input_box input_box balance"
-    "income_button expense_button balance";
-  grid-gap: 20px;
+    ". . . . . . . . balance_header"
+    "aib  aib trib trib trib trib balance balance balance"
+    "aib  aib trib trib trib trib balance balance balance"
+    "aib  aib trib trib trib trib balance balance balance"
+    "income_button income_button income_button expense_button expense_button expense_button balance balance balance";
+  grid-gap: 10px;
   margin: 0;
+  max-height: 100vw;
   /* row-gap: 0; */
   /* width: 450px; */
   /* height: 975px; */
 }
 
-.top-container input {
-  grid-area: input_box;
+.top-container .transaction_reason_input_box {
+  grid-area: trib;
+}
+
+.top-container .amount_input_box {
+  grid-area: aib;
 }
 
 .top-container p {
@@ -50,14 +55,16 @@ body {
   grid-area: income_button;
   background-color: #006a71;
   text-align: center;
-  padding: 16px;
+  padding: 18px;
+  font-size: 1.2rem;
 }
 
 .top-container .Expense {
   grid-area: expense_button;
   background-color: #cf1b1b;
   text-align: center;
-  padding: 16px;
+  padding: 18px;
+  font-size: 1.2rem;
 }
 
 .top-container .balance {

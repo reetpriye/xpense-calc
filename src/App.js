@@ -15,7 +15,11 @@ export default function App() {
       <div className="main-container">
         <Header />
         <div className="top-container">
-          <InputBox />
+          <InputBox text={"Amount in ₹"} classname={"amount_input_box"} />
+          <InputBox
+            text={"Transaction Reason"}
+            classname={"transaction_reason_input_box"}
+          />
           <AddTransactionButton text={"+Income"} />
           <AddTransactionButton text={"-Expense"} />
           <Balance />
