@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./components/Header";
 import Balance from "./components/Balance";
 import AddTransaction from "./components/AddTransaction";
-import AddTransactionButton from "./components/AddTransactionButton";
 import TransactionList from "./components/TransactionList";
 import IncomeExpense from "./components/IncomeExpense";
 import Footer from "./components/Footer";
@@ -18,8 +17,6 @@ export default function App() {
         <Header />
         <div className="top-container">
           <AddTransaction />
-          <AddTransactionButton text={"+Income"} />
-          <AddTransactionButton text={"-Expense"} />
           <Balance />
         </div>
         <TransactionList />

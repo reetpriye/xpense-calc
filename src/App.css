@@ -62,7 +62,7 @@ body {
   padding: 0;
 }
 
-.top-container .Income {
+.top-container .income-btn {
   grid-column: 7/10;
   grid-row: 2/3;
   background-color: #006a71;
@@ -70,7 +70,7 @@ body {
   padding: 1.2rem;
 }
 
-.top-container .Expense {
+.top-container .expense-btn {
   grid-column: 7/10;
   grid-row: 3/4;
   background-color: #cf1b1b;

@@ -7,36 +7,52 @@ const AddTransaction = () => {
 
   const { addTransaction } = useContext(GlobalContext);
 
-  const onSubmit = (e) => {
+  const onIncomeSubmit = (e) => {
     e.preventDefault();
 
-    const newTransaction = {
+    const newIncomeTransaction = {
       id: Math.floor(Math.random() * 100000000),
       text,
       amount: +amount
     };
 
-    addTransaction(newTransaction);
+    addTransaction(newIncomeTransaction);
+  };
+
+  const onExpenseSubmit = (e) => {
+    e.preventDefault();
+
+    const newExpenseTransaction = {
+      id: Math.floor(Math.random() * 100000000),
+      text,
+      amount: parseInt("-" + amount, 10)
+    };
+
+    addTransaction(newExpenseTransaction);
   };
 
   return (
     <>
-      <form onSubmit={onSubmit}>
-        <input
-          type="text"
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
-          className="amount-input"
-          placeholder="Amount in ₹"
-        />
-        <input
-          type="text"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          className="text-input"
-          placeholder="Transaction Reason"
-        />
-      </form>
+      <input
+        type="text"
+        value={amount}
+        onChange={(e) => setAmount(e.target.value)}
+        className="amount-input"
+        placeholder="Amount in ₹"
+      />
+      <input
+        type="text"
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        className="text-input"
+        placeholder="Transaction Reason"
+      />
+      <button onClick={onIncomeSubmit} className="income-btn">
+        +Income
+      </button>
+      <button onClick={onExpenseSubmit} className="expense-btn">
+        -Expense
+      </button>
     </>
   );
 };
