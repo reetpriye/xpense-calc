@@ -8,7 +8,7 @@ body {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
-.container {
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +31,7 @@ body {
     "income_button expense_button balance";
   grid-gap: 20px;
   margin: 0;
+  /* row-gap: 0; */
   /* width: 450px; */
   /* height: 975px; */
 }
@@ -41,6 +42,8 @@ body {
 
 .top-container p {
   grid-area: balance_header;
+  margin: 20px 0 0 0;
+  font-size: 1.2rem;
 }
 
 .top-container .Income {

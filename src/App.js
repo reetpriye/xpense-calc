@@ -12,12 +12,12 @@ import AddTransactionButton from "./components/AddTransactionButton";
 export default function App() {
   return (
     <>
-      <div className="container">
+      <div className="main-container">
         <Header />
         <div className="top-container">
           <InputBox />
-          <AddTransactionButton text={"Income"} />
-          <AddTransactionButton text={"Expense"} />
+          <AddTransactionButton text={"+Income"} />
+          <AddTransactionButton text={"-Expense"} />
           <Balance />
         </div>
         {/* <Transaction /> */}
