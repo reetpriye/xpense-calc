@@ -4,7 +4,7 @@ const Balance = () => {
   return (
     <>
       <p>Available Balance</p>
-      <div className="balance">₹400</div>
+      <div className="balance">₹374247894.89</div>
     </>
   );
 };

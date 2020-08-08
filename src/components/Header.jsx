@@ -1,5 +1,9 @@
 import React from "react";
 
-const Header = () => <h1 className="header">XpenseCalc</h1>;
+const Header = () => (
+  <div className="header">
+    <h1>XpenseCalc</h1>
+  </div>
+);
 
 export default Header;
