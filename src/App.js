@@ -17,12 +17,17 @@ export default function App() {
     <GlobalProvider>
       <div className="main-container">
         <Header />
-        <div className="top-container">
-          <AddTransaction />
-          <Balance />
+        <div className="total-balance-container">
+          <IncomeExpense />
         </div>
-        <TransactionList />
-        <IncomeExpense />
+        <div className="top-container">
+          <Balance />
+          <AddTransaction />
+        </div>
+
+        <div className="transaction-container">
+          <TransactionList />
+        </div>
       </div>
       <Footer />
     </GlobalProvider>
