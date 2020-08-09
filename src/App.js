@@ -6,6 +6,8 @@ import TransactionList from "./components/TransactionList";
 import IncomeExpense from "./components/IncomeExpense";
 import Footer from "./components/Footer";
 
+import "./fontawesomeIcons";
+
 import { GlobalProvider } from "./context/GlobalState";
 
 import "./App.css";
@@ -20,9 +22,9 @@ export default function App() {
           <Balance />
         </div>
         <TransactionList />
-        {/* <Footer /> */}
         <IncomeExpense />
       </div>
+      <Footer />
     </GlobalProvider>
   );
 }

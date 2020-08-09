@@ -90,6 +90,21 @@ body {
   word-wrap: break-word;
 }
 
+footer {
+  text-align: right;
+  line-height: 1.4;
+}
+footer .data-sync {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  margin-left: 1rem;
+}
+
+footer .designed-by {
+  display: inline-block;
+}
+
 /* CSS END */
 
 .list {
