@@ -92,27 +92,27 @@ body {
 
 .total-balance-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 1.1rem;
   min-width: 100%;
   justify-content: space-between;
+  padding: 0.2rem;
 }
 
 .total-balance-container .total-income {
-  /* background-color: #eeeeee; */
-  /* color: #393e46; */
-  color: #eeeeee;
-  padding: 0.5rem;
+  background-color: #eeeeee;
+  color: #393e46;
+  padding: 0.3rem;
   align-self: flex-end;
+  font-size: 0.8rem;
 }
 
 .total-balance-container .total-expense {
-  /* background-color: #eeeeee; */
-  /* color: #393e46; */
-  color: #eeeeee;
-  padding: 0.5rem;
+  background-color: #eeeeee;
+  color: #393e46;
+  padding: 0.3rem;
   align-self: flex-end;
-  flex-basis: 100%;
+  font-size: 0.8rem;
 }
 
 footer {

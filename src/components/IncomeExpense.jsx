@@ -18,8 +18,8 @@ const IncomeExpense = () => {
 
   return (
     <>
-      <h1>{income}</h1>
-      <h1>{expense}</h1>
+      <div className="total-income">Total Income:₹{income}</div>
+      <div className="total-expense">Total Expense₹{expense}</div>
     </>
   );
 };
