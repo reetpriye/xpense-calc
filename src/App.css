@@ -104,7 +104,6 @@ body {
   color: #393e46;
   padding: 0.3rem;
   align-self: flex-end;
-  font-size: 0.8rem;
 }
 
 .total-balance-container .total-expense {
@@ -112,7 +111,6 @@ body {
   color: #393e46;
   padding: 0.3rem;
   align-self: flex-end;
-  font-size: 0.8rem;
 }
 
 footer {
