@@ -17,7 +17,6 @@ export default function App() {
     <GlobalProvider>
       <div className="main-container">
         <Header />
-
         <div className="top-container">
           <Balance />
           <AddTransaction />
