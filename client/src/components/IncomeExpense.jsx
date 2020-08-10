@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
+import {numberWithCommas} from "../utils/format";
 
 const IncomeExpense = () => {
   const { transactions } = useContext(GlobalContext);
@@ -18,8 +19,8 @@ const IncomeExpense = () => {
 
   return (
     <>
-      <div className="total-income">Total Income:₹{income}</div>
-      <div className="total-expense">Total Expense₹{expense}</div>
+      <div className="total-income">Total Income:₹{numberWithCommas(income)}</div>
+      <div className="total-expense">Total Expense₹{numberWithCommas(expense)}</div>
     </>
   );
 };
